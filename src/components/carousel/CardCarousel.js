@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const Card = ({ movie }) => {
+const CardCarousel = ({ movie }) => {
   const [isShown, setIsShown] = useState(false)
 
   return (
@@ -29,4 +29,4 @@ const Card = ({ movie }) => {
   )
 }
 
-export default Card
+export default CardCarousel

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import Card from "./Card"
+import CardCarousel from "./carousel/CardCarousel"
 
 const Section = ({ genre }) => {
   const [movies, setMovies] = useState(null)
@@ -26,7 +26,7 @@ const Section = ({ genre }) => {
       {movies && (
         <div className="movie-section">
           {movies.map((movie, index) => (
-            <Card key={index} movie={movie} />
+            <CardCarousel key={index} movie={movie} />
           ))}
           <div
             className="more-button"
